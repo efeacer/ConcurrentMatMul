@@ -2,7 +2,6 @@ import modelClasses.*;
 
 public class Main {
 
-    // Constants
     private static final int OUTER_DIM1 = 150;
     private static final int INNER_DIM = 150;
     private static final int OUTER_DIM2 = 150;

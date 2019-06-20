@@ -18,13 +18,12 @@ public class ConcurrentMatrixMultiplier extends MatrixMultiplier {
     @Override
     public Matrix multiply() {
         for (Thread t: threads) t.run();
-        for (Thread t: threads) {
+        for (Thread t: threads)
             try {
                 t.join();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }
         return result;
     }
 
